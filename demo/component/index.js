@@ -21,6 +21,7 @@ import ScatterChart from './ScatterChart';
 import RadarChart from './RadarChart';
 import RadialBarChart from './RadialBarChart';
 import Treemap from './Treemap';
+import Funnel from './Funnel';
 
 export default {
   chartWrapper: {
@@ -33,6 +34,7 @@ export default {
     RadarChart,
     RadialBarChart,
     Treemap,
+    Funnel,
   },
 
   polar: {

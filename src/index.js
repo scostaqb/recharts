@@ -41,6 +41,7 @@ export LineChart from './chart/LineChart';
 export BarChart from './chart/BarChart';
 export PieChart from './chart/PieChart';
 export Treemap from './chart/Treemap';
+export Funnel from './chart/Funnel';
 export RadarChart from './chart/RadarChart';
 export ScatterChart from './chart/ScatterChart';
 export AreaChart from './chart/AreaChart';
