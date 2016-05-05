@@ -13,8 +13,10 @@ function FunnelDemo() {
   return (
     <div className="funnel-chart-wrapper">
       <Funnel
-        width={250}
+        width={600}
         height={250}
+        leftPadding={50}
+        rightPadding={200}
         data={funnelData}
       />
     </div>
