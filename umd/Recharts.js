@@ -33747,15 +33747,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var children = this.props.children;
 
 	      var tooltipItem = (0, _ReactUtils.findChildByType)(children, _Tooltip2.default);
+
+	      if (!tooltipItem || !tooltipItem.props.cursor || !this.state.isTooltipActive) {
+	        return null;
+	      }
+
 	      var _state = this.state;
 	      var isTooltipActive = _state.isTooltipActive;
 	      var activeItem = _state.activeItem;
 	      var activeTooltipCoord = _state.activeTooltipCoord;
-
-
-	      if (!tooltipItem || !tooltipItem.props.cursor || !isTooltipActive) {
-	        return null;
-	      }
 
 	      var viewBox = {
 	        x: offset.left,
