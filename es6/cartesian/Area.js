@@ -327,7 +327,6 @@ var Area = (0, _PureRender2.default)(_class = (_temp = _class2 = function (_Comp
       var customLabelProps = (0, _ReactUtils.getPresentationAttributes)(label);
 
       var labels = points.map(function (entry, i) {
-        console.log('entry',entry)
         var labelProps = _extends({
           textAnchor: 'middle'
         }, entry, areaProps, customLabelProps, {
