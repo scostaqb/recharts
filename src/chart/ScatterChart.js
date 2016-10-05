@@ -295,12 +295,12 @@ class ScatterChart extends Component {
   renderTooltip(items, xAxis, yAxis, zAxis, offset) {
     const { children } = this.props;
     const tooltipItem = findChildByType(children, Tooltip);
+    const { isTooltipActive, activeItem, activeTooltipCoord } = this.state;
 
-    if (!tooltipItem || !tooltipItem.props.cursor || !this.state.isTooltipActive) {
+    if (!tooltipItem || !tooltipItem.props.cursor || !isTooltipActive) {
       return null;
     }
 
-    const { isTooltipActive, activeItem, activeTooltipCoord } = this.state;
     const viewBox = {
       x: offset.left,
       y: offset.top,
